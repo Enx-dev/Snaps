@@ -8,9 +8,9 @@ type Props = {};
 const Body = (props: Props) => {
   const Logos = [logo1, logo2, logo3, logo4];
   return (
-    <section className='space-y-8 items-center flex flex-col lg:pt-[5rem]   lg:flex-row-reverse lg:absolute top-0 bottom-0 left-0 right-0 lg:m-auto lg:items-center lg:justify-center lg:pl-16 lg:gap-2'>
+    <section className='space-y-8 items-center mb-4 flex flex-col lg:pt-[5rem]   lg:flex-row-reverse lg:absolute top-0 bottom-0 left-0 right-0 lg:m-auto lg:items-center lg:justify-center lg:pl-16 lg:gap-2'>
       <div className='bg-heroImageMobile  lg:bg-heroImageDesktop h-[370px] w-full bg-cover bg-no-repeat  bg-center lg:bg-contain lg:bg-no-repeat lg:w-[30%] flex-shrink-0 lg:h-full'></div>
-      <div className='px-4 lg:w-1/2 space-y-6 text-center lg:text-left lg:px-0 lg:space-y-10'>
+      <div className='px-4 lg:w-1/2 space-y-10 text-center lg:text-left lg:px-0 lg:space-y-10'>
         <h1 className='text-3xl lg:flex lg:flex-col  lg:text-[5vw]  text-almostBlack font-bold'>
           {" "}
           Make <span className='lg:pt-[0.5em]'>remote work</span>
@@ -28,10 +28,10 @@ const Body = (props: Props) => {
         hover:text-almostBlack
         hover:ring-almostBlack
         hover:ring-2
-        px-4 bg-almostBlack text-almostWhite py-2 rounded-xl'>
+        px-4 bg-almostBlack text-almostWhite py-2 mb-4 rounded-xl'>
           Learn more
         </button>
-        <div className='flex justify-between lg:justify-start lg:space-x-12'>
+        <div className='flex my-4 justify-between lg:justify-start lg:space-x-12'>
           {Logos.map((logo) => {
             return (
               <img
