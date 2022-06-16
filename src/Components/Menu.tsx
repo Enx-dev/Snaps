@@ -17,7 +17,7 @@ const Menu = ({ setToggle }: Props) => {
   const [show2, setShow2] = useState(false);
   return createPortal(
     <section className='fixed hide-scrollbar overflow-auto z-[1000] flex top-0 bottom-0 bg-almostBlack/75 right-0 left-0'>
-      <div className=' absolute py-16 space-y-8 px-8 right-0  bg-almostWhite w-3/4 max-w-[300px]'>
+      <div className=' absolute py-16 space-y-8 px-8 right-0 min-h-screen  bg-almostWhite w-3/4 max-w-[300px]'>
         <img
           onClick={() => setToggle(false)}
           className='absolute cursor-pointer top-5 right-4'
